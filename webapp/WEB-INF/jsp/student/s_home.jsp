@@ -24,14 +24,14 @@
 <body>
 	<!--整个页面栅格-->
 	<div class="container-fluid "
-		style="background-color: blasck; padding: 0px; margin-left: 4%;">
+		style="background-color: white; padding: 0px; margin-left: 4%;">
 		<div class="row-fluid">
 			<div class="span12">
 				<!-- 通知轮转图 -->
 				<!--data-ride="carousel" 使轮转图自动轮转-->
 				<div class="carousel slide" id="carousel-598343"
 					data-ride="carousel"
-					style="width: 1200px; height: 200px; background: url(/WorkManageSystem/img/back.jpg); color: white;">
+					style="width: 1200px; height: 200px; background: url(../img/back2.png); color: white;">
 					<ol class="carousel-indicators">
 					<c:if test="${!empty notice }">
 					<c:forEach items="${notice }" var="n" varStatus="loop">

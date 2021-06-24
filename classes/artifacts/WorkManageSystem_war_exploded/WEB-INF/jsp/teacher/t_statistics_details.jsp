@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
     <!-- 包含头部信息用于适应不同设备 -->
     <meta name="viewport" content="width=device-width, initial-scale=1
     	user-scalable=no">
@@ -56,7 +56,7 @@
 	String c_id = session.getAttribute("c_id").toString();
 	String w_title = session.getAttribute("w_title").toString();
 	int Wno = Integer.parseInt(session.getAttribute("Wno").toString());
-	
+
 	System.out.println("提交统计班级作业点击jsp--班级号:"+c_id);
 	System.out.println("提交统计班级作业点击jsp--:作业号"+Wno);
 	System.out.println("提交统计班级作业点击jsp--:作业主题"+w_title);
@@ -85,7 +85,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                    	
+
                     	<%
 								for(int i=0; i<student.size(); i++){
 						%>
@@ -95,33 +95,33 @@
 					                            <td><%=student.get(i).getS_name() %></td>
 					                            <td><%=student.get(i).getS_sex()%></td>
 						<%
-									for(int j=0; j<chW.size(); j++){ 
+									for(int j=0; j<chW.size(); j++){
 										if( student.get(i).getS_account().equals(chW.get(j).getCh_s_account()) ){
-						%>				
+						%>
 					                            <td><%=chW.get(j).getCh_score()  %></td>
 					                            <td><%=chW.get(j).getCh_mark() %></td>
 					                            <td>已提交</td>
-					                            <td><%=chW.get(j).getCh_upTime().toString().substring(0,    chW.get(j).getCh_upTime().toString().length()-2) %></td>
+					                            <td><%=chW.get(j).getCh_upTime().toString().substring(0,chW.get(j).getCh_upTime().toString().length()-2) %></td>
 					                            <%
 					                            	System.out.println("提交时间"+j+"："+chW.get(j).getCh_upTime());
 					                            	System.out.println("批改时间"+j+"："+chW.get(j).getCh_checkTime());
 					                            		if( chW.get(j).getCh_score() ==0 ){
 					                            %>			<td><%=chW.get(j).getCh_checkTime() %></td><!-- 此时为null -->
 					                            			<td><a type="button" class="check" onclick="check('<%=student.get(i).getS_account() %>','<%=student.get(i).getS_name() %>','<%=w_title %>','<%=chW.get(j).getCh_id() %>')"  href = "javascript:void(0)">批阅</a></td>
-					                            			<td><a href="/WorkManageSystem/teacher/Download?Wno=<%=Wno%>&c_id=<%=c_id%>&Uptime=<%=chW.get(j).getCh_upTime().toString().substring(0,chW.get(j).getCh_upTime().toString().length()-2) %>">下载</a></td>
+					                            			<td><a href="/WorkManageSystem/teacher/Download?Wno=<%=Wno%>&c_id=<%=c_id%>&Uptime=<%=chW.get(j).getCh_upTime().toString() %>">下载</a></td>
 					                            <%	}
 					                            		else{
-					                            %>			
+					                            %>
 					                            			<td><%=chW.get(j).getCh_checkTime().toString().substring(0, chW.get(j).getCh_checkTime().toString().length()-2)  %></td><!-- 此时已有时间 -->
 					                            			<td><a style="color:#B23AEE;" type="button" class="check" onclick="check('<%=student.get(i).getS_account() %>','<%=student.get(i).getS_name() %>','<%=w_title %>','<%=chW.get(j).getCh_id() %>')"  href = "javascript:void(0)">已批阅</a></td>
-					                            			<td><a href="/WorkManageSystem/teacher/Download?Wno=<%=Wno%>&c_id=<%=c_id%>&Uptime=<%=chW.get(j).getCh_upTime().toString().substring(0,chW.get(j).getCh_upTime().toString().length()-2) %>">下载</a></td>
+					                            			<td><a href="/WorkManageSystem/teacher/Download?Wno=<%=Wno%>&c_id=<%=c_id%>&Uptime=<%=chW.get(j).getCh_upTime().toString() %>">下载</a></td>
 					                            <%
 					                            		}
 					                            %>
-					                            
-					                           
+
+
 				                        </tr>
-						<%			
+						<%
 											flag = 1;
 										}
 									}
@@ -135,10 +135,10 @@
 					                            <td> 无法批阅</td>
 					                            <td>无</td>
 				                        </tr>
-						<%			
+						<%
 											flag = 1;
-										}										
-										
+										}
+
 									flag=0;
 								}
 						%>
@@ -152,9 +152,9 @@
                 		<input name = "ch_id" class = "ch_id" type = "hidden" value = "666">
                 		<input name = "c_id" class = "c_id" type = "hidden" value = "<%=c_id%>"><!-- 班级号 -->
                 		<input name = "Wno" class = "Wno" type = "hidden" value = "<%=Wno%>"><!-- 作业号 -->
-                		
+
 	                    <br><span class = "sno" style="margin-left:12%;"> 	&nbsp;&nbsp;&nbsp;&nbsp;</span>
-	                    
+
 	                    <!-- <span style="margin-left:280px;"><a type="button" onclick="Download()" href="javascript:void(0)">下载学生作业</a></span> -->
 	                    <br><br>
 	                    <textarea name = "ch_mark" rows="10" cols="100" style="resize: none;" style = "background-color: #F0F0F0;"></textarea>

@@ -41,25 +41,28 @@
 	<%
 		String s_account = session.getAttribute("s_account").toString();
 		String clazz = session.getAttribute("clazz").toString();
+
 	%>
 	<!--整个页面栅格-->
 	<div class="container-fluid " style="background-color: white;padding: 0px;margin-left: 4%;">
 		<div class="row-fluid">
 			<div class="span12">
-				<%
-					System.out.println("豆沙色");
-				%>
-				<form  action="/WorkManageSystem/student/s_uploadwork?s_account=<%=s_account%>&clazz=<%=clazz%>&w_id=1"  method = "post" enctype="multipart/form-data">
+
+				<form  action="/WorkManageSystem/student/s_uploadwork?s_account=<%=s_account%>&clazz=<%=clazz%>"  method = "post" enctype="multipart/form-data">
 					<div class=" " style="margin-left:40%;margin-top: 10%;">
 						 <div class="input-group input-group-sm" style="width: 200px;">
-	                        <span class="input-group-addon">作业</span>
-	                        <select class="form-control" name="w_title">
-		                        <c:if test="${!empty w_title }">
-									<c:forEach items="${w_title }" var="w" varStatus="loop">
-										<option>${w_title[loop.count-1]}</option>
-									</c:forEach>
+	                         <span class="input-group-addon">作业</span>
+	                        <select class="form-control" name="w_id" >
+		                        <c:if test="${!empty map }">
+									<c:forEach items="${map}" var="map" varStatus="loop">
+										<c:forEach items="${map.value}" var="value" varStatus="loop">
+												<option name="w_id" id="w_id" value="${map.key}">${map.value}</option>
+										</c:forEach>
+ 									</c:forEach>
+
 								</c:if>
 	                        </select>
+
 	                    </div>
 					</div>
 					<div class="" style="margin-left:40%;margin-top: 5%;">

@@ -3,10 +3,7 @@ package wms.controller;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -123,9 +120,19 @@ public class StudentController {
 		String clazz = studentManager.getClazzBySno(s_account);
 		List<Work> work = studentManager.getAllWork(clazz);
 		String[] w_title  = new String[work.size()];
+		HashMap<Integer,String> map = new HashMap<>();
+		int[] w_id=new int[work.size()];
 		for (int m=0;m<w_title.length;m++){
 			w_title[m] = work.get(m).getW_title();
+			w_id[m] = work.get(m).getW_id();
+			map.put(w_id[m],w_title[m]);
+			System.out.println(map.keySet());
+			System.out.println(map.values());
 		}
+
+		session.setAttribute("map",map);
+
+		session.setAttribute("w_id", w_id);
 		session.setAttribute("w_title", w_title);
 		session.setAttribute("s_account", s_account);
 		session.setAttribute("clazz", clazz);
@@ -137,6 +144,7 @@ public class StudentController {
 	//上传文件
 	@RequestMapping(value="/s_uploadwork")
 	public String s_uploadwork(@RequestParam("s_account") String s_account,@RequestParam("clazz") String clazz,@RequestParam("w_id") int w_id,  HttpServletRequest request,HttpServletResponse response,HttpSession session) throws IllegalStateException, IOException{
+
 		Work work1 = workManager.getWork(w_id);
 		String w_title  = work1.getW_title();
 
@@ -158,8 +166,10 @@ public class StudentController {
 			    	SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy.MM.dd-HH.mm.ss");
 			        Date date = new Date();
 			        String time = simpleDateFormat.format(date); //当前提交时间 (做文件名)
+					System.out.println(time);
 			        String Uptime =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date);//（插入数据库）
 					String fileName = s_account+"提交作业："+ time +"_"+file.getOriginalFilename();
+					System.out.println(fileName);
 					//String path = "F:\\UploadWork\\" + fileName;		//提交路径(用于磁盘写入文件)
 					//String Upath = "F:\\UploadWork\\";				//提交路径(保存到数据库)
 					String path = "D:\\Work" + fileName;		//提交路径(用于保存文件到磁盘)
@@ -168,7 +178,7 @@ public class StudentController {
 					file.transferTo(localFile);//上传文件
 */
 					String Wtitle = w_title.trim();
-					Work work = workManager.getWorkByWtitle(Wtitle);
+					Work work = workManager.getWork(w_id);
 					//上传之前先判断是否已上传，即checkwork表中有相同的学号(ch_s_account)和作业号（ch_w_id）。如果有表示已上传过 ,则更新当前表
 					if( checkWorkManager.getCheckWorkByWnoSno(work.getW_id(), s_account) != null ){		//如果不等于空，表示已提交过
 						CheckWork chw  = checkWorkManager.getCheckWorkByWnoSno(work.getW_id(), s_account);

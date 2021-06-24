@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>登录界面(Login)</title>
+        <title>作业管理系统</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -13,6 +13,7 @@
         <script src="login/assets/js/supersized.3.2.7.min.js" ></script>
         <script src="login/assets/js/supersized-init.js" ></script>
         <script src="login/assets/js/scripts.js" ></script>
+        <script src="BootStrap/js/bootstrap.js"></script>
 
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="login/assets/css/reset.css">
@@ -35,10 +36,11 @@
 		<div class="page-container">
             <font color="#000" size="80px">作业管理系统</font>
             <form id="login" action="login" method="get">
-                <input type="text" name="account" class="account" placeholder="请输入您的账号！">
+                <h1 >账 号</h1>
+                <br> <input type="text" name="account" class="account" placeholder="请输入您的账号！"></br>
+                <h1>密 码</h1>
                 <input type="password" name="password" class="password" placeholder="请输入您的用户密码！"><br><br>
-                <font  color="#000">类型：</font >
-				<select  name = "type" id = "type" style="background: transparent;color:white;">
+				<select class="selectpicker" name = "type" id = "type" >
 					<option name = "type" value = "type" style="background-color: #AAAAAA">类型</option>
 					<option name = "type" value = "Manager" style="background-color: #AAAAAA">管理员</option>
 					<option name = "type" value = "Teacher"  style="background-color: #AAAAAA">教师</option>

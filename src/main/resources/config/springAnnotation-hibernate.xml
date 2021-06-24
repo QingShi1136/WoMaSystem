@@ -13,7 +13,7 @@
 		<!-- 数据库的驱动 -->
 		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
 		<!-- 数据库的Id,用户名与密码 -->
-		<property name="url" value="jdbc:mysql://localhost:3306/work-mg?characterEncoding=UTF-8&amp;serverTimezone=UTC" />
+		<property name="url" value="jdbc:mysql://localhost:3306/work-mg?characterEncoding=UTF-8&amp;serverTimezone=Hongkong" />
 		<property name="username" value="root" />
 		<property name="password" value="123" />
 	</bean>
@@ -25,10 +25,7 @@
 			<props>
 				<!-- 配置不同数据库的方言 -->
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
-				<!-- 其实这个参数的作用主要用于：自动创建|更新|验证数据库表结构。 如果不是此方面的需求建议set value="none". 其它几个参数的意思，我解释一下：
-					validate 加载hibernate时，验证创建数据库表结构 create 每次加载hibernate，重新创建数据库表结构，这就是导致数据库表数据丢失的原因。
-					create-drop 加载hibernate时创建，退出是删除表结构； update 加载hibernate自动更新数据库结构 -->
-				<prop key="hibernate.hbm2ddl.auto">update</prop>
+
 				<!-- 是否显示sql语句 -->
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hiberante.format_sql">true</prop>

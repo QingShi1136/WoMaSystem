@@ -39,7 +39,7 @@ public class WorkDao implements IWorkDao {
 //		private String w_course;	//课程号
 //		private String w_t_account;	//教师号
 //		private String w_c_id;		//班级号
-		//System.out.println("222222:"+work.getId()+teacher.getT_account()+teacher.getT_name()+teacher.getT_sex()+teacher.getT_dept()+teacher.getT_password());
+
 		String hql = "update Work w set w.w_title=?, w.w_content=?, w.w_deadline=?, w.w_course=?, w.w_t_account=? ,w.w_c_id=? where w.w_id=?";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		query.setString(0, work.getW_title());
@@ -69,7 +69,6 @@ public class WorkDao implements IWorkDao {
 		return query.list();
 	}
 
-	//*********学生用到的方法*************************************
 	@Override
 	public Work getWorkByWtitle(String Wtitle) {
 		String hql = "from Work w where w.w_title=?";

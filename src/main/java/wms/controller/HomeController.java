@@ -20,8 +20,11 @@ import wms.service.ITeacherManager;
 @Controller
 public class HomeController {
 
-	/*@Autowired
-	private LabService labService;*/
+	/**
+	 * 用于实现登录版块功能
+	 * @Resource注解用于实现依赖注入
+	 * @requestmapping注解用于映射地址
+	 */
 
 	@Resource(name="managerManager")
 	private IManagerService managerManager;

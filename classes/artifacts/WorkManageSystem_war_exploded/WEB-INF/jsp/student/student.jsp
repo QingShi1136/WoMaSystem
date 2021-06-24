@@ -65,13 +65,13 @@
 	%> --%>
 	<!--整个页面栅格-->
 	<div class="container-fluid"
-		style="background-color: blasck; margin-left: 100px; margin-right: 100px; padding-top: 0px;">
+		style="background-color: white; margin-left: 100px; margin-right: 100px; padding-top: 0px;">
 		<div class="row-fluid">
 			<div class="span12">
 
 				<!--系统头部-->
 				<div class="page-header"
-					style="margin-top: 0px; height: 42px; clear: all;">
+					style="margin-top: 0px; height: 42px; ">
 					<h1 class="text-center">
 						<span><strong>作业管理系统</strong></span>
 						<!-- <img src="img/bom.gif" style="margin-left: 12%;"> -->
@@ -132,7 +132,7 @@
 						<div style="height: 1000px;">
 							<iframe src="/WorkManageSystem/student/s_home?c_id=${student.s_c_id }&s_account=${student.s_account}" frameborder="0"
 								seamless="seamless" marginheight="0px" marginwidth="0px"
-								width="100%" height="100%""></iframe>
+								width="100%" height="100%"></iframe>
 						</div>
 					</div>
 				</div>

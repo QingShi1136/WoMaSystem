@@ -20,7 +20,6 @@ public interface IWorkDao {
 	public List<Work> getAllWork();
 
 
-	//*********学生用到的方法*************************************
 	public Work getWorkByWtitle(String Wtitle);
 	public Work getWorkById(int Id);
 

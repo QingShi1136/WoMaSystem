@@ -357,7 +357,7 @@ public class TeacherController {
 	public String Download(@RequestParam("Wno")int Wno,@RequestParam("c_id")String c_id,@RequestParam("Uptime") String Uptime,RedirectAttributes model,HttpServletResponse response) throws IOException{
 		System.out.println("下载作业："+Wno+","+c_id+","+Uptime);
 		//String pathY = "F:\\DownloadWork\\";
-		String path = "F:/";	//下载文件的文件夹路径
+		String path = "D:\\";	//下载文件的文件夹路径
 		//解析时分秒
 		String years = Uptime.substring(0,4);
 		String month = Uptime.substring(5,7);
@@ -370,6 +370,7 @@ public class TeacherController {
 		System.out.println("下载作业--文件中显示的时间格式："+years+"."+month+"."+day+ "-"+hour+":"+minute+":"+seconds+"---"+UptimeFileName);
 		File files1 = new File(path);
 		String [] names1 = files1.list();
+		System.out.println(files1.isDirectory());
 		String FileName = "";	//有后缀
 		for( String s:names1 ){
 			if( new File(files1.getAbsolutePath()+s).isFile() ){//判断是否有文件
@@ -387,34 +388,26 @@ public class TeacherController {
 		//download(response,fileNameTemp);
 
 		//获取所要下载文件的路径
-    	String path1 = fileNameTemp;
-        String realPath = path1.substring(path1.lastIndexOf("\\")+1);  //真正的文件名+扩展名
+		String path1 = fileNameTemp;
+		String realPath = path1.substring(path1.lastIndexOf(":\\")+1);  //真正的文件名+扩展名
 
-        //告诉浏览器是以下载的方法获取到资源
-        //告诉浏览器以此种编码来解析URLEncoder.encode(realPath, "utf-8"))
-        response.setHeader("content-disposition","attachment; filename="+URLEncoder.encode(realPath, "utf-8"));
-        //获取到所下载的资源
-        FileInputStream fis = new FileInputStream(path1);
-        OutputStream out = response.getOutputStream();
-        //FileInputStream fis = new FileInputStream("F:\\temp\\myfile.txt");
-        int len = 0;
-        byte [] buf = new byte[1024];
-        while((len=fis.read(buf))!=-1){
-        	out.write(buf,0,len);
-        }
-        //关闭输入流
-        fis.close();
-        //关闭输出流
-        out.close();
-
-
-
-
-
-
-
-
-		/*File files = new File("F:/");    //创建File对象,指向F盘根目录
+		//告诉浏览器是以下载的方法获取到资源
+		//告诉浏览器以此种编码来解析URLEncoder.encode(realPath, "utf-8"))
+		response.setHeader("content-disposition","attachment; filename="+URLEncoder.encode(realPath, "utf-8"));
+		//获取到所下载的资源
+		FileInputStream fis = new FileInputStream(path1);
+		OutputStream out = response.getOutputStream();
+		//FileInputStream fis = new FileInputStream("F:\\temp\\myfile.txt");
+		int len = 0;
+		byte [] buf = new byte[1024];
+		while((len=fis.read(buf))!=-1){
+			out.write(buf,0,len);
+		}
+		//关闭输入流
+		fis.close();
+		//关闭输出流
+		out.close();
+		File files = new File("D:/");    //创建File对象,指向F盘根目录
         String[] names = files.list();    //获取F盘根目录所有文件和路径,并以字符串数组返回
         for(String s:names){    //遍历字符串数组
             boolean a = s.startsWith("ja");    //文件名前缀带有ja的返回true,没有则返回false
@@ -423,7 +416,7 @@ public class TeacherController {
             if(a&&b){    //此处条件根据需要进行修改
                 System.out.println(s);    //打印出符合条件的文件
             }
-        }*/
+        }
 
 		model.addAttribute("w_id", Wno);
 		model.addAttribute("c_id", c_id);
@@ -435,6 +428,7 @@ public class TeacherController {
 
         //获取所要下载文件的路径
     	String path1 = fileNameTemp;
+    	System.out.println(path1);
     	//String path = this.getServletContext().getRealPath(/WEB-INF/web.xml); //从项目路径下找
         String realPath = path1.substring(path1.lastIndexOf("\\")+1);
 
