@@ -28,6 +28,7 @@ import wms.service.ICheckWorkManager;
 import wms.service.IStudentManager;
 import wms.service.IWorkManager;
 
+
 @Controller
 @RequestMapping("/student")
 public class StudentController {
@@ -38,6 +39,7 @@ public class StudentController {
 	private IWorkManager workManager;
 	@Resource(name="checkWorkManager")
 	private ICheckWorkManager checkWorkManager;
+
 
 	@RequestMapping("/updateStudentName")
 	public String updateStudentName(Student student,HttpSession request){
@@ -134,7 +136,10 @@ public class StudentController {
 
 	//上传文件
 	@RequestMapping(value="/s_uploadwork")
-	public String s_uploadwork(@RequestParam("s_account") String s_account,@RequestParam("clazz") String clazz,@RequestParam("w_title") String w_title,  HttpServletRequest request,HttpServletResponse response,HttpSession session) throws IllegalStateException, IOException{
+	public String s_uploadwork(@RequestParam("s_account") String s_account,@RequestParam("clazz") String clazz,@RequestParam("w_id") int w_id,  HttpServletRequest request,HttpServletResponse response,HttpSession session) throws IllegalStateException, IOException{
+		Work work1 = workManager.getWork(w_id);
+		String w_title  = work1.getW_title();
+
 		//创建一个通用的多部分解析器
 		CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(request.getSession().getServletContext());
 		//设置编码
@@ -157,8 +162,8 @@ public class StudentController {
 					String fileName = s_account+"提交作业："+ time +"_"+file.getOriginalFilename();
 					//String path = "F:\\UploadWork\\" + fileName;		//提交路径(用于磁盘写入文件)
 					//String Upath = "F:\\UploadWork\\";				//提交路径(保存到数据库)
-					String path = "F:\\" + fileName;		//提交路径(用于保存文件到磁盘)
-					String Upath = "F:\\";					//提交路径(保存到数据库)
+					String path = "D:\\Work" + fileName;		//提交路径(用于保存文件到磁盘)
+					String Upath = "D:\\Work";					//提交路径(保存到数据库)
 					/*File localFile = new File(path);
 					file.transferTo(localFile);//上传文件
 */
@@ -184,6 +189,11 @@ public class StudentController {
 						}
 						session.setAttribute("flag", 1);//返回参数判断是否上传成功
 					}
+					/*if(checkWorkManager.addCheckWorkByFile(s_account, clazz, work.getW_id(), Uptime, Upath)){
+						System.out.println("上传成功，上传数据成功插入数据库表");
+					}
+					session.setAttribute("flag", 1);//返回参数判断是否上传成功
+					*/
 
 				}
 			}

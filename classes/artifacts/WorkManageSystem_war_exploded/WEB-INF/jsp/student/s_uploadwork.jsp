@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -43,14 +43,15 @@
 		String clazz = session.getAttribute("clazz").toString();
 	%>
 	<!--整个页面栅格-->
-	<div class="container-fluid " style="background-color: blasck;padding: 0px;margin-left: 4%;">
+	<div class="container-fluid " style="background-color: white;padding: 0px;margin-left: 4%;">
 		<div class="row-fluid">
 			<div class="span12">
-				<form action="/WorkManageSystem/student/s_uploadwork?s_account=<%=s_account%>&clazz=<%=clazz%>&w_title=${w_title}"  method = "post" enctype="multipart/form-data">
+				<%
+					System.out.println("豆沙色");
+				%>
+				<form  action="/WorkManageSystem/student/s_uploadwork?s_account=<%=s_account%>&clazz=<%=clazz%>&w_id=1"  method = "post" enctype="multipart/form-data">
 					<div class=" " style="margin-left:40%;margin-top: 10%;">
 						 <div class="input-group input-group-sm" style="width: 200px;">
-						 	<%-- <input type="hidden" name="Sno" value="<%=s_account%>" />
-						 	<input type="hidden" name="Clazz" value="<%=clazz%>" /> --%>
 	                        <span class="input-group-addon">作业</span>
 	                        <select class="form-control" name="w_title">
 		                        <c:if test="${!empty w_title }">

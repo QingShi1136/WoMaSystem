@@ -8,6 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
+        <!-- Javascript -->
+        <script src="login/assets/js/jquery-1.8.2.min.js" ></script>
+        <script src="login/assets/js/supersized.3.2.7.min.js" ></script>
+        <script src="login/assets/js/supersized-init.js" ></script>
+        <script src="login/assets/js/scripts.js" ></script>
 
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="login/assets/css/reset.css">
@@ -47,11 +52,6 @@
             </form>
 		</div>
 
-		<!-- Javascript -->
-        <script src="login/assets/js/jquery-1.8.2.min.js" ></script>
-        <script src="login/assets/js/supersized.3.2.7.min.js" ></script>
-        <script src="login/assets/js/supersized-init.js" ></script>
-        <script src="login/assets/js/scripts.js" ></script>
 
 	</body>
 </html>

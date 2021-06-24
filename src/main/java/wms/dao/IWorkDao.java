@@ -18,12 +18,11 @@ public interface IWorkDao {
 	public Work getWork(int id);
 	//查询作业表所有的数据
 	public List<Work> getAllWork();
-	
-	
+
+
 	//*********学生用到的方法*************************************
 	public Work getWorkByWtitle(String Wtitle);
-	
-	
-	
-	
+	public Work getWorkById(int Id);
+
+
 }

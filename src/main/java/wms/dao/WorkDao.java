@@ -11,11 +11,11 @@ public class WorkDao implements IWorkDao {
 
 	//引入SessionFactory变量,SessionFactory接口负责初始化Hibernate。它充当数据存储源的代理，并负责创建Session对象
 	private SessionFactory sessionFactory;
-	
+
 	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
-	
+
 	@Override
 	public void addWork(Work work) {
 		sessionFactory.getCurrentSession().save(work);
@@ -26,7 +26,7 @@ public class WorkDao implements IWorkDao {
 		String hql = "delete Work w where w.w_id = ?";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		query.setInteger(0, id);
-		
+
 		return (query.executeUpdate()>0);	//大于0，删除成功
 	}
 
@@ -57,7 +57,7 @@ public class WorkDao implements IWorkDao {
 		String hql = "from Work w where w.w_id = ?";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		query.setInteger(0, id);
-		
+
 		return (Work) query.uniqueResult();
 	}
 
@@ -65,7 +65,7 @@ public class WorkDao implements IWorkDao {
 	public List<Work> getAllWork() {
 		String hql = "from Work";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
-		
+
 		return query.list();
 	}
 
@@ -77,5 +77,11 @@ public class WorkDao implements IWorkDao {
 		query.setString(0, Wtitle);
  		return (Work) query.uniqueResult();
 	}
+
+	@Override
+	public Work getWorkById(int id) {
+		return null;
+	}
+
 
 }

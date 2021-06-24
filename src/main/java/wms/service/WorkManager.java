@@ -1,18 +1,18 @@
 package wms.service;
 
 import java.util.List;
- 
+
 import wms.dao.IWorkDao;
 import wms.entity.Work;
 
 public class WorkManager implements IWorkManager {
 
 	private IWorkDao workDao;	//引入作业dao层接口
-	
+
 	public void setWorkDao(IWorkDao workDao) {
 		this.workDao = workDao;
 	}
-	
+
 	@Override
 	public void addWork(Work work) {
 		workDao.addWork(work);
@@ -43,5 +43,8 @@ public class WorkManager implements IWorkManager {
 	public Work getWorkByWtitle(String Wtitle) {
 		return workDao.getWorkByWtitle(Wtitle);
 	}
-
+	@Override
+	public Work getWorkById(int id) {
+		return workDao.getWorkById(id);
+	}
 }

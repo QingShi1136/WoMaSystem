@@ -5,7 +5,7 @@ import java.util.List;
 import wms.entity.Work;
 
 public interface IWorkManager {
-	
+
 	//*********作业用到的方法*************************************
 	//增加一条作业记录
 	public void addWork(Work work);
@@ -17,10 +17,10 @@ public interface IWorkManager {
 	public Work getWork(int id);
 	//查询作业表所有的数据
 	public List<Work> getAllWork();
-	
-	
+
+
 	//*********学生用到的方法*************************************
 	public Work getWorkByWtitle(String Wtitle);
-	
-	
+	public Work getWorkById(int id);
+
 }
