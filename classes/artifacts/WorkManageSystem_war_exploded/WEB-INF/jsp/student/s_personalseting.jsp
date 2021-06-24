@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
     <!-- 包含头部信息用于适应不同设备 -->
     <meta name="viewport" content="width=device-width, initial-scale=1
     	user-scalable=no">
@@ -19,17 +19,12 @@
 				<thead>
 				</thead>
 				<tbody>
-					
-					<tr class="success">
-						<td>
-							<a id="modal-1" href="#modal-container-1" class="1" data-toggle="modal" style="clear:both;">修 改 信 息</a>               
-						</td>
-					</tr>					
+
 					<tr class="warning">
 						<td>
-							<a id="modal-1" href="#modal-container-4" class="1" data-toggle="modal" style="clear:both;">修 改 密 码</a>               
+							<a id="modal-1" href="#modal-container-4" class="1" data-toggle="modal" style="clear:both;">修 改 密 码</a>
 						</td>
-					</tr>					
+					</tr>
 				</tbody>
 			</table>
 			<div class="container-fluid">
@@ -55,7 +50,7 @@
 									新名:&nbsp;<input type="text" name="s_name" value=""/>
 								</div>
 								<div class="modal-footer">
-									 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button> 
+									 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 									 <button type="submit" class="btn btn-primary">修改</button>
 									 <button type="reset" id="reset" class="btn btn-primary">重置</button>
 								</div>
@@ -86,7 +81,7 @@
 									确定密码:<input type="password" name="check_newpsw">
 								</div>
 								<div class="modal-footer">
-									 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button> 
+									 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 									 <button type="submit" class="btn btn-primary">修改</button>
 									 <button type="reset" id="reset" class="btn btn-primary">重置</button>
 								</div>

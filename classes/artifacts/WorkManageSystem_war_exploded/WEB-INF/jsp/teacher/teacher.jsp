@@ -109,7 +109,7 @@
 									<li><a href="#" class="allworks">总览</a></li>
 									<li><a href="#" class="publish">发布作业</a></li>
 									<li class="divider"></li>
-									<li><a href="#" class="allworks">删 除</a></li>
+
 								</ul></li>
 
 							<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -118,7 +118,7 @@
 									<li><a href="#" class="allnotice">总览</a></li>
 									<li><a href="#" class="notice">发布公告</a></li>
 									<li class="divider"></li>
-									<li><a href="#" class="allnotice">删 除</a></li>
+							
 								</ul></li>
 
 							<li class="dropdown"><a href="#"

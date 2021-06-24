@@ -104,8 +104,7 @@
 								<li><a href="#" class="allT">总 览</a></li>
 								 <li class="divider"></li>
 								<li><a href="#" class="addT">添 加</a></li>
-								<li><a href="#" class="allT">删 除</a></li>
-								<li><a href="#" class="allT">修 改</a></li>
+
 							  </ul>
 							</li>
 
@@ -117,8 +116,7 @@
 								<li><a href="#" class="allS">总 览</a></li>
 								 <li class="divider"></li>
 								<li><a href="#" class="addS">添 加</a></li>
-								<li><a href="#" class="allS">删 除</a></li>
-								<li><a href="#" class="allS">修 改</a></li>
+
 							  </ul>
 							</li>
 
@@ -130,8 +128,7 @@
 								<li><a href="#" class="allC">总 览</a></li>
 								 <li class="divider"></li>
 								<li><a href="#" class="addC">添 加</a></li>
-								<li><a href="#" class="allC">删 除</a></li>
-								<li><a href="#" class="allC">修 改</a></li>
+
 							  </ul>
 							</li>
 
