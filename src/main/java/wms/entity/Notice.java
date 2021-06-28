@@ -25,7 +25,6 @@ public class Notice {//公告表
 	public void setNt_content(String nt_content) {
 		this.nt_content = nt_content;
 	}
-	
 	public String getNt_time() {
 		return nt_time;
 	}
@@ -44,5 +43,4 @@ public class Notice {//公告表
 	public void setNt_c_id(String nt_c_id) {
 		this.nt_c_id = nt_c_id;
 	}
-	
 }

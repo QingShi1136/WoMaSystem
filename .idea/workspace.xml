@@ -28,42 +28,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d17a9e5-d319-46b6-aa4a-daa87adeb1e8" name="Default" comment="项目提交第二次">
-      <change afterPath="$PROJECT_DIR$/wms.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/login/assets/img/10.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/classes/config/springAnnotation-hibernate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/classes/config/springAnnotation-hibernate.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/classes/wms/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/classes/wms/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/classes/wms/controller/TeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/classes/wms/controller/TeacherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/classes/wms/dao/WorkDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/classes/wms/dao/WorkDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/student/s_home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/student/s_home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/student/s_uploadwork.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/student/s_uploadwork.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/student/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/student/student.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/teacher/t_statistics_details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/teacher/t_statistics_details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/img/back.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/img/back.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wms/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wms/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/classes/wms/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/classes/wms/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/manager/m_addstudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/manager/m_addstudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/teacher/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/WEB-INF/jsp/teacher/teacher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/login/assets/css/supersized.css" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/login/assets/css/supersized.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/login/assets/js/supersized-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/WorkManageSystem_war_exploded/login/assets/js/supersized-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wms/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/controller/ManagerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wms/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wms/dao/CheckWorkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/dao/CheckWorkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wms/dao/IWorkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/dao/IWorkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wms/dao/WorkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/dao/WorkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wms/service/CheckWorkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/service/CheckWorkManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/springAnnotation-hibernate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/springAnnotation-hibernate.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/springAnnotation-hibernate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/springAnnotation-hibernate.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wms/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wms/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wms/controller/TeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wms/controller/TeacherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wms/dao/WorkDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wms/dao/WorkDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/manager/manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/manager/manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/student/s_home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/student/s_home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/student/s_personalseting.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/student/s_personalseting.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/student/s_uploadwork.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/student/s_uploadwork.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/student/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/student/student.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/teacher/t_personalseting.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/teacher/t_personalseting.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/teacher/t_statistics_details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/teacher/t_statistics_details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/teacher/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/teacher/teacher.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/img/back.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/img/back.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/login/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/login/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wms/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/entity/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wms/entity/Notice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/entity/Notice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wms/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wms/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wms/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/manager/m_addstudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/manager/m_addstudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/login/assets/css/supersized.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/login/assets/css/supersized.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/login/assets/js/supersized-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/login/assets/js/supersized-init.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +102,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webapp/WorkManageSystem/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webapp/login/assets/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -143,9 +122,9 @@
       <recent name="wms.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Tenct files\1136198016\FileRecv\WoMaSystem\webapp\login\assets\img" />
       <recent name="D:\Tenct files\1136198016\FileRecv\WoMaSystem\webapp\WorkManageSystem\img" />
       <recent name="D:\Tenct files\1136198016\FileRecv\WoMaSystem\webapp\img" />
-      <recent name="D:\Tenct files\1136198016\FileRecv\WoMaSystem\webapp\login\assets\img" />
       <recent name="D:\Tenct files\1136198016\FileRecv\WoMaSystem\src\main\webapp\login\assets\img" />
       <recent name="D:\Tenct files\1136198016\FileRecv\HomeworkManageSystem\webapp\login\assets\img" />
     </key>
@@ -160,17 +139,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -306,7 +274,13 @@
       <workItem from="1624499002310" duration="9078000" />
       <workItem from="1624516430891" duration="13252000" />
       <workItem from="1624531763195" duration="16812000" />
-      <workItem from="1624553231639" duration="10556000" />
+      <workItem from="1624553231639" duration="10746000" />
+      <workItem from="1624579791161" duration="4259000" />
+      <workItem from="1624584458096" duration="6583000" />
+      <workItem from="1624716010754" duration="3596000" />
+      <workItem from="1624756976675" duration="13953000" />
+      <workItem from="1624806475715" duration="2013000" />
+      <workItem from="1624812200512" duration="734000" />
     </task>
     <task id="LOCAL-00001" summary="项目提交">
       <created>1624494785435</created>
@@ -322,7 +296,28 @@
       <option name="project" value="LOCAL" />
       <updated>1624516601155</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="第三次提交">
+      <created>1624563889697</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563889697</updated>
+    </task>
+    <task id="LOCAL-00004" summary="第四次提交">
+      <created>1624563918308</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563918308</updated>
+    </task>
+    <task id="LOCAL-00005" summary="第四次提交">
+      <created>1624563937437</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563937437</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,10 +336,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="项目提交" />
     <MESSAGE value="项目提交第二次" />
     <MESSAGE value="第三次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第三次提交" />
+    <MESSAGE value="第四次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第四次提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1624462772312">
@@ -363,54 +361,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="199" y="104" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1624494442003" />
-    <state width="1193" height="276" key="GridCell.Tab.0.bottom" timestamp="1624562714511">
+    <state width="1193" height="276" key="GridCell.Tab.0.bottom" timestamp="1624592175048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624562714511" />
-    <state width="1193" height="276" key="GridCell.Tab.0.center" timestamp="1624562714511">
+    <state width="1193" height="276" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624592175048" />
+    <state width="1193" height="276" key="GridCell.Tab.0.center" timestamp="1624592175047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1624562714511" />
-    <state width="1193" height="276" key="GridCell.Tab.0.left" timestamp="1624562714511">
+    <state width="1193" height="276" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1624592175047" />
+    <state width="1193" height="276" key="GridCell.Tab.0.left" timestamp="1624592175047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1624562714511" />
-    <state width="1193" height="276" key="GridCell.Tab.0.right" timestamp="1624562714511">
+    <state width="1193" height="276" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1624592175047" />
+    <state width="1193" height="276" key="GridCell.Tab.0.right" timestamp="1624592175047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1624562714511" />
-    <state width="1193" height="276" key="GridCell.Tab.1.bottom" timestamp="1624562714512">
+    <state width="1193" height="276" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1624592175047" />
+    <state width="1193" height="276" key="GridCell.Tab.1.bottom" timestamp="1624592175048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624562714512" />
-    <state width="1193" height="276" key="GridCell.Tab.1.center" timestamp="1624562714511">
+    <state width="1193" height="276" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624592175048" />
+    <state width="1193" height="276" key="GridCell.Tab.1.center" timestamp="1624592175048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1624562714511" />
-    <state width="1193" height="276" key="GridCell.Tab.1.left" timestamp="1624562714511">
+    <state width="1193" height="276" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1624592175048" />
+    <state width="1193" height="276" key="GridCell.Tab.1.left" timestamp="1624592175048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1624562714511" />
-    <state width="1193" height="276" key="GridCell.Tab.1.right" timestamp="1624562714512">
+    <state width="1193" height="276" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1624592175048" />
+    <state width="1193" height="276" key="GridCell.Tab.1.right" timestamp="1624592175048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1624562714512" />
-    <state width="1193" height="276" key="GridCell.Tab.2.bottom" timestamp="1624562714512">
+    <state width="1193" height="276" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1624592175048" />
+    <state width="1193" height="276" key="GridCell.Tab.2.bottom" timestamp="1624592175048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624562714512" />
-    <state width="1193" height="276" key="GridCell.Tab.2.center" timestamp="1624562714512">
+    <state width="1193" height="276" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624592175048" />
+    <state width="1193" height="276" key="GridCell.Tab.2.center" timestamp="1624592175048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1624562714512" />
-    <state width="1193" height="276" key="GridCell.Tab.2.left" timestamp="1624562714512">
+    <state width="1193" height="276" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1624592175048" />
+    <state width="1193" height="276" key="GridCell.Tab.2.left" timestamp="1624592175048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1624562714512" />
-    <state width="1193" height="276" key="GridCell.Tab.2.right" timestamp="1624562714512">
+    <state width="1193" height="276" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1624592175048" />
+    <state width="1193" height="276" key="GridCell.Tab.2.right" timestamp="1624592175048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1193" height="276" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1624562714512" />
+    <state width="1193" height="276" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1624592175048" />
     <state width="1193" height="276" key="GridCell.Tab.3.bottom" timestamp="1624557323225">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -435,14 +433,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1624537465265" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1624516630450">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1624563991925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1624516630450" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1624563991925" />
     <state x="482" y="288" width="600" height="536" key="find.popup" timestamp="1624557144510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="288" width="600" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1624557144510" />
+    <state x="178" y="22" key="new project wizard" timestamp="1624580363474">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1624580363474" />
     <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1624468570416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

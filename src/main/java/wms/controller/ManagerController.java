@@ -373,12 +373,6 @@ public class ManagerController {
 		}
 	}
 
-	/*
-	 * 管理员页面(导航栏)------个人设置------信息修改之后-->跳转到当前页面
-	 */
-	/*@RequestMapping("/m_personalseting_jsp")
-	public String m_personalseting_jsp(Model model){
-		return "manager/m_personalseting";
-	}*/
+
 
 }

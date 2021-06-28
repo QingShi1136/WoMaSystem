@@ -3,29 +3,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
     <!-- 包含头部信息用于适应不同设备 -->
     <meta name="viewport" content="width=device-width, initial-scale=1
     	user-scalable=no">
     <!-- 包含 bootstrap 样式表 -->
     <link rel="stylesheet" href="/WorkManageSystem/BootStrap/css/bootstrap.min.css">
 	<title>学生管理-增加</title>
-	
-	<script type="text/javascript">  
-	    function addStudent(){  
-	        var form = document.forms[0];  
-	        form.action = "/WorkManageSystem/manager/addStudent";  
-	        form.method="post";  
-	        form.submit();  
-	    }  
-	</script> 
-	
+
+	<script type="text/javascript">
+	    function addStudent(){
+	        var form = document.forms[0];
+	        form.action = "/WorkManageSystem/manager/addStudent";
+	        form.method="post";
+
+	        form.submit();
+	    }
+
+
+	</script>
+
 </head>
 <body>
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-md-12 column">
-			
+
 				<form class="form-horizontal" role="form" action="" name="studentForm">
 					<div class="form-group">
 						 <label for="inputEmail3" class="col-sm-2 control-label">学号:</label>
@@ -36,7 +39,7 @@
 					<div class="form-group">
 						 <label for="inputEmail3" class="col-sm-2 control-label">姓名:</label>
 						<div class="col-sm-2">
-							<input type="text" name="s_name" class="form-control" id="inputEmail3" />
+							<input type="text" name="s_name" class="form-control" id="inputEmail3" required=”required”/>
 						</div>
 					</div>
 					<div class="form-group">
@@ -66,7 +69,7 @@
 							<input type="text" name="s_dept" class="form-control" id="inputEmail3" />
 						</div>
 					</div>
-					
+
 					<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
 							 <button type="button" class="btn btn-default" onclick="addStudent()">添加</button>&nbsp;&nbsp;&nbsp;
@@ -74,7 +77,7 @@
 						</div>
 					</div>
 				</form>
-				
+
 			</div>
 		</div>
 	</div>

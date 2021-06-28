@@ -8,7 +8,6 @@ public class Student {//学生表
 	private String s_c_id;		//班级号
 	private String s_password;	//密码
 	private String s_dept;		//所在系
-	
 	public int getId() {
 		return id;
 	}
@@ -51,6 +50,4 @@ public class Student {//学生表
 	public void setS_dept(String s_dept) {
 		this.s_dept = s_dept;
 	}
-	
-	
 }

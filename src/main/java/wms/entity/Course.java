@@ -22,6 +22,5 @@ public class Course {//课程表
 	public void setC_credit(int c_credit) {
 		this.c_credit = c_credit;
 	}
-	
-	
+
 }

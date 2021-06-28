@@ -282,12 +282,6 @@ public class TeacherController {
 			Teacher teacher = teacherManager.getTeacher(id);
 			request.setAttribute("teacher", teacher);
 			request.setAttribute("msg", "账号修改成功");
-			/*String name = manager.getM_name();
-			System.out.println("管理员个人设置修改账号name:"+name);
-
-			model.addAttribute("m_name", manager.getM_name());*/
-			//return "redirect:/manager/m_personalseting";	//修改成功后--重定向到-->个人设置页面（内嵌）
-			//model.addAttribute("msg", "账号修改成功");
 			return "redirect:/teacher/t_personalseting";	//修改成功后--重定向到-->个人设置页面（内嵌）
 		}else{
 			request.setAttribute("msg", "教师账号修改出错了！！");
@@ -449,7 +443,4 @@ public class TeacherController {
         //关闭输出流
         out.close();
     }
-
-
-
 }

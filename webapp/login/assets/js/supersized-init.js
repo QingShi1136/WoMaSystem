@@ -20,7 +20,7 @@ jQuery(function($){
 
         slide_links        : 'blank',
         slides             : [
-                                 {image : 'login/assets/img/1.jpg'},
+                                 {image : 'login/assets/img/10.jpg'},
                                  {image : 'login/assets/img/2.jpg'},
                                  {image : 'login/assets/img/3.jpg'},
                                  {image : 'login/assets/img/8.jpg'}

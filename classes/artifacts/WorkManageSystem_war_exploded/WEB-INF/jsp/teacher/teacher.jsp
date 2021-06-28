@@ -118,7 +118,7 @@
 									<li><a href="#" class="allnotice">总览</a></li>
 									<li><a href="#" class="notice">发布公告</a></li>
 									<li class="divider"></li>
-							
+
 								</ul></li>
 
 							<li class="dropdown"><a href="#"
